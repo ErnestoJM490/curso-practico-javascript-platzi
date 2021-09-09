@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas | Curso Practico de JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <h1>Figuras Geométricas</h1>
+            </header>
+            <p>Este es el primer taller del curso práctico de JavaScript</p>
+            <hr>
+            
+            <div class="col-lg-6">
+                <div class="card" style="width: 30rem;">
+                    <center>
+                        <img class="card-img-top" src="img/cuadrado.jpg" style="width: 30%;">
+                    </center>
+                    <h4>Calcula el area y perimetro de un Cuadrado</h4>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <br>
+                                <label for="inputCuadrado">Escribe cuanto mide el lado de tu cuadrado</label>
+                                <input class="form-control" id="inputCuadrado" type="number" />
+                                <button class="btn btn-info" type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+                                <button class="btn btn-success" type="button" onclick="calcularAreaCuadrado()">Calcular area</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card" style="width: 30rem;">
+                    <center>
+                        <img class="card-img-top" src="img/triangulo.jpg" style="width: 30%;">
+                    </center>
+                    <h4>Calcula el area y perimetro de un Triangulo</h4>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <br>
+                                <label for="inputTriangulo1">Escribe cuanto mide el lado 1 de tu triangulo</label>
+                                <input class="form-control" id="inputTriangulo1" type="number" />
+
+                                <label for="inputTriangulo2">Escribe cuanto mide el lado 2 de tu triangulo</label>
+                                <input class="form-control" id="inputTriangulo2" type="number" />
+
+                                <label for="inputTriangulo3">Escribe cuanto mide la base de tu triangulo</label>
+                                <input class="form-control" id="inputTriangulo3" type="number" />
+
+                                <label for="inputTriangulo4">Escribe cuanto mide la altura de tu triangulo</label>
+                                <input class="form-control" id="inputTriangulo4" type="number" />
+
+                                <button class="btn btn-info" type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+                                <button class="btn btn-success" type="button" onclick="calcularAreaTriangulo()">Calcular area</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="card" style="width: 30rem;">
+                    <center>
+                        <img class="card-img-top" src="img/circulo.jpg" style="width: 30%;">
+                    </center>
+                    <h4>Calcula el area y perimetro de un Circulo</h4>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <br>
+                                <label for="inputCirculo">Escribe cuanto mide el radio de tu Circulo</label>
+                                <input class="form-control" id="inputCirculo" type="number" />
+
+                                <button class="btn btn-info" type="button" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+                                <button class="btn btn-success" type="button" onclick="calcularAreaCirculo()">Calcular area</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        
+
+        </div><!-- End row -->
+    </div><!-- End container -->
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
